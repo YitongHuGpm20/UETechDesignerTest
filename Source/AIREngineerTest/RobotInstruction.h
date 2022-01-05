@@ -14,6 +14,8 @@ class AIRENGINEERTEST_API URobotInstruction : public UObject
 public:
 	URobotInstruction();	
 
+	virtual void Instruction(ARobot* Robot);
+
 	UFUNCTION(BlueprintCallable)
-		bool ExecuteInstruction();
+		bool ExecuteInstruction(ARobot* Robot);
 };

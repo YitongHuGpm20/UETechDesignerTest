@@ -7,7 +7,13 @@ URobotInstruction::URobotInstruction()
 	
 }
 
-bool URobotInstruction::ExecuteInstruction()
+void URobotInstruction::Instruction(ARobot* Robot)
 {
+	UE_LOG(LogTemp, Warning, TEXT("Robot Instruction"));
+}
+
+bool URobotInstruction::ExecuteInstruction(ARobot* Robot)
+{
+	Instruction(Robot);
 	return true;
 }
